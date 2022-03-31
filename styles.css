@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(images/img8.jpg);
+    background-size: cover;
+    font-family: 'Cabin', 'Indie Flower', 'Mali', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2em;
+}
+.feedback-container {
+    background: rgba(242, 240, 225, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em 0;
+}
+@media screen and (min-width: 800px) {
+    .feedback-container {
+        flex-direction: row;
+    }
+    .feedback-text, .feedback-form{
+        width: 50%;
+        height: auto;
+    } 
+}
+.feedback-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.feedback-text h1 {
+    font-family: 'Indie Flower';
+    font-size: 2.5em;
+    padding: 1em ;
+}
+.feedback-form h1 {
+    font-size: 2.5em;
+    padding-bottom: .5em;
+}
+input, #message, #selector {
+    display: block;
+    width: 70%;
+    border-style: none;
+    background-color: rgba(233, 200, 128, 0.712);
+    border-bottom: 1.5px solid rgba(228, 161, 75, 0.885);
+    padding: .3em;
+}
+input:focus, #message:focus {
+    outline: 1px solid rgba(233, 200, 128, 0.712);
+    background-color: white;
+    border: 1px solid white;
+}
+.submit-btn {
+    font-family: 'Cabin','Indie Flower', 'Mali', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-top: 1em;
+    padding: .5em 1em;
+    border-style: none;
+    border-radius: 2px 5px;
+    border: 1px solid rgb(208, 114, 42);
+    background-color: rgba(207, 138, 49, 0.885);
+}
+.submit-btn:hover {
+    background-color: rgb(118, 68, 2);
+    color: aliceblue;
+}
